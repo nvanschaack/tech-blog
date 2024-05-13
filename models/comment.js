@@ -32,7 +32,7 @@ Comment.init(
     {
         sequelize,
         underscored: true,
-        modelName: 'blog'
+        modelName: 'comment'
     }
 );
 
