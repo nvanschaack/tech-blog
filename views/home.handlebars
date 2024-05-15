@@ -1,1 +1,9 @@
-<h1>This is Home</h1>
+{{#each blogs}}
+<div>
+    {{!-- the blog title, the user who created the blog and the date created --}}
+    <h2><a href="/blog/{{id}}">{{title}}</a></h2>
+    <h3>{{user.username}}</h3>
+    <h3>{{createdAt}}</h3>
+</div>
+
+{{/each}}
