@@ -1,9 +1,9 @@
 <h1>Your Blog Posts</h1>
 <a href="/dashboard/new">New Blog Post</a>
 {{!-- each of the blog posts posted here --}}
-{{#if blog}}
+{{#if blogs}}
 <div>
-    {{#each blog}}
+    {{#each blogs as |blog|}}
     <div>
         <h2>{{blog.title}}</h2>
     </div>
