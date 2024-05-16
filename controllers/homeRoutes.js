@@ -41,12 +41,12 @@ router.get('/blog/:id', async (req, res) => {
     })
     const blog = oneBlog.get({ plain: true });
 
-    res.render('individualBlog', {
+    console.log(blog, req.session.loggedIn);
+
+    res.render('individualBlog', { 
         blog,
         loggedIn: req.session.logged_in,
     })
 })
-
-
 
 module.exports = router;

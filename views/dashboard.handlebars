@@ -1,2 +1,16 @@
-<h1>This is the dashboard</h1>
+<h1>Your Blog Posts</h1>
 <a href="/dashboard/new">New Blog Post</a>
+{{!-- each of the blog posts posted here --}}
+{{#if blog}}
+<div>
+    {{#each blog}}
+    <div>
+        <h2>{{blog.title}}</h2>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+<p>No blog posts yet.</p>
+{{/if}}
+
+<script src="/js/newBlogPost.js"></script>

@@ -2,8 +2,8 @@
 <div>
     {{!-- the blog title, the user who created the blog and the date created --}}
     <h2><a href="/blog/{{id}}">{{title}}</a></h2>
-    <h3>{{user.username}}</h3>
-    <h3>{{createdAt}}</h3>
+    <h3>created by: {{user.username}}</h3>
+    <h3>at: {{createdAt}}</h3>
 </div>
 
 {{/each}}

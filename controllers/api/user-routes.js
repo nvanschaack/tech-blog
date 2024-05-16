@@ -5,7 +5,7 @@ const { User } = require('../../models')
 router.post('/', async (req, res) => {
     try {
         //newUser is the created user from the req.body 
-        const newUser = await User.create(req.body)
+        const newUser = await User.create(req.body);
         //req.session.save is saving the new user's id and username in a session table
         req.session.save(() => {
             req.session.user_id = newUser.id;
