@@ -6,6 +6,10 @@
     {{#each blogs as |blog|}}
     <div>
         <h2>{{blog.title}}</h2>
+        <a href="/dashboard/edit/{{blog.id}}">
+            <button>Edit</button>
+        </a>
+        <button class="delete" value="{{blog.id}}">Delete</button>
     </div>
     {{/each}}
 </div>
@@ -13,4 +17,4 @@
 <p>No blog posts yet.</p>
 {{/if}}
 
-<script src="/js/newBlogPost.js"></script>
+<script src="/js/dashboard.js"></script>

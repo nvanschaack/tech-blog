@@ -1,6 +1,24 @@
 {{!-- create edit blog handlebar, which will include a form --}}
 
-<form>
-    <label for=""></label>
-    <input type="text">
+<form id="editForm" class="mb-3 col-6 ">
+
+    <input type="hidden" value="{{blog.id}}" id="blogId">
+    <div class="mb-3">
+
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" value="{{blog.title}}" id="title" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="content"  class="form-label">Content:</label>
+        <textarea name="" id="content" class="form-control">{{blog.content}}</textarea>
+    </div>
+
+<div class="text-center">
+
+    <button type="submit">Submit</button>
+</div>
+
 </form>
+
+<script src="/js/editBlog.js"></script>
