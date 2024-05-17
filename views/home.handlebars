@@ -3,7 +3,7 @@
     {{!-- the blog title, the user who created the blog and the date created --}}
     <h3><a class="home-blog-title" href="/blog/{{id}}">{{title}}</a></h3>
     <h4>created by: {{user.username}}</h4>
-    <h4>at: {{createdAt}}</h4>
+    <h4>on: {{formatDate createdAt}}</h4>
 </div>
 
 {{/each}}
