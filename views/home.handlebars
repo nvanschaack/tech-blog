@@ -1,9 +1,9 @@
 {{#each blogs}}
-<div>
+<div class="home-div">
     {{!-- the blog title, the user who created the blog and the date created --}}
-    <h2><a href="/blog/{{id}}">{{title}}</a></h2>
-    <h3>created by: {{user.username}}</h3>
-    <h3>at: {{createdAt}}</h3>
+    <h3><a class="home-blog-title" href="/blog/{{id}}">{{title}}</a></h3>
+    <h4>created by: {{user.username}}</h4>
+    <h4>at: {{createdAt}}</h4>
 </div>
 
 {{/each}}

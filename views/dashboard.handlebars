@@ -1,20 +1,22 @@
-<h1>Your Blog Posts</h1>
-<a href="/dashboard/new">New Blog Post</a>
-{{!-- each of the blog posts posted here --}}
-{{#if blogs}}
-<div>
-    {{#each blogs as |blog|}}
-    <div>
-        <h2>{{blog.title}}</h2>
-        <a href="/dashboard/edit/{{blog.id}}">
-            <button>Edit</button>
-        </a>
-        <button class="delete" value="{{blog.id}}">Delete</button>
+<div class="dashboard-div">
+    <h2 class="your-blog-posts">Your Blog Posts:</h2>
+    <a class="new-blog-post-tag" href="/dashboard/new">New Blog Post</a>
+    {{!-- each of the blog posts posted here --}}
+    {{#if blogs}}
+    <div class="dashboard-blog-div">
+        {{#each blogs as |blog|}}
+        <div >
+            <h4 class="dashboard-blog-title">{{blog.title}}</h4>
+            <a href="/dashboard/edit/{{blog.id}}">
+                <button class="edit">Edit</button>
+            </a>
+            <button class="delete" value="{{blog.id}}">Delete</button>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
+    {{else}}
+    <p>No blog posts yet.</p>
+    {{/if}}
 </div>
-{{else}}
-<p>No blog posts yet.</p>
-{{/if}}
 
 <script src="/js/dashboard.js"></script>

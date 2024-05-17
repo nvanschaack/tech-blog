@@ -1,0 +1,79 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+    font-family: "Lobster Two", sans-serif;
+}
+
+header nav a{
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+}
+
+header nav button {
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+/* DASHBOARD STYLING */
+.dashboard-div {
+    margin: 20px;
+    padding: 20px;
+    
+}
+.your-blog-posts {
+    text-decoration: underline;
+}
+.new-blog-post-tag {
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+    margin: 15px;
+    padding: 5px;
+}
+
+.edit {
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+}
+
+.delete {
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+}
+
+.dashboard-blog-title {
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.dashboard-blog-div{
+    padding: 20 px;
+    margin: 30px;
+}
+
+/* HOME STYLING */
+.home-div {
+    margin: 30px;
+    padding: 20px;
+}
+
+.home-blog-title {
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+}
