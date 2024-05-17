@@ -1,3 +1,4 @@
+/* MAIN STYLING */
 * {
     font-family: "Montserrat", sans-serif;
 }
@@ -23,6 +24,7 @@ header nav {
     display: flex;
     justify-content: space-around;
 }
+
 /* DASHBOARD STYLING */
 .dashboard-div {
     margin: 20px;
@@ -77,3 +79,5 @@ header nav {
     background-color: lightblue;
     color: black;
 }
+
+/* INDIVIDUAL BLOG STYLING*/
